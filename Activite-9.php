@@ -6,16 +6,16 @@ $deck = [];
 
 for ($i=0; $i < count($suit); $i++) {
     for ($j=0; $j < count($nums); $j++) {
-        $deck[] = $nums.[$j]." ".$suit.[$i];
-
-
+        echo "\$Deck", "<br>", var_dump ($deck,"<br>");
+        $deck[] = $nums[$j]." ".$suit[$i];
+        echo "\$Deck", "<br>", var_dump ($deck,"<br>");
     }
+
 }
 
-echo "\$Deck", "<br>", var_dump ($Deck,"<br>");
+$sdeck 
 
-
-
+//echo "\$Deck", "<br>", var_dump ($deck,"<br>");
 
 ?>
 
