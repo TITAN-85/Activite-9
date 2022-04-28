@@ -5,7 +5,7 @@ $suit = ["♦", "♣", "♥", "♠"];
 $deck = [];
 $deck1 =[];
 $deck2 =[];
-
+$shaffle=[];
 
 for ($i=0; $i < count($suit); $i++){
     for ($j=0; $j < count($nums); $j++) {
@@ -16,19 +16,26 @@ for ($i=0; $i < count($suit); $i++){
 for ($i=0; $i < 26; $i++){
     $deck1[] = $deck[$i];
 }
-for ($i=0; $i < 26; $i++){
+for ($i=26; $i < 52; $i++){
     $deck2[] = $deck[$i];
 }
-for($i=0; $i < 52; $i++){
-
+for($i=0; $i < 26; $i++){
+    $shaffle[] = $deck1[$i];
+    $shaffle[] = $deck2[$i+1];
 }
 
 
 
 
 
-echo "\$Deck", "<br>", var_dump ($deck,"<br>");
-print_r($deck);
+echo "\$Deck", "<br>", print_r($deck,"<br>");
+echo "<br><br><br>";
+echo "\$Deck1", "<br>", print_r($deck1,"<br>");
+echo "<br><br><br>";
+echo "\$Deck2", "<br>", print_r($deck2,"<br>");
+echo "<br><br><br>";
+echo "\$Deck2", "<br>", print_r($shaffle,"<br>");
+
 
 
 //echo "\$Deck", "<br>", var_dump ($deck,"<br>");
