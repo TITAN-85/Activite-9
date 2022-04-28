@@ -19,10 +19,14 @@ for ($i=0; $i < 26; $i++){
 for ($i=26; $i < 52; $i++){
     $deck2[] = $deck[$i];
 }
+
+$shaffle[0] = $deck2[0];
 for($i=0; $i < 26; $i++){
     $shaffle[] = $deck1[$i];
     $shaffle[] = $deck2[$i+1];
 }
+unset($shaffle[52]);
+
 
 
 
@@ -34,7 +38,7 @@ echo "\$Deck1", "<br>", print_r($deck1,"<br>");
 echo "<br><br><br>";
 echo "\$Deck2", "<br>", print_r($deck2,"<br>");
 echo "<br><br><br>";
-echo "\$Deck2", "<br>", print_r($shaffle,"<br>");
+echo "\$shaffle", "<br>", print_r($shaffle,"<br>");
 
 
 
