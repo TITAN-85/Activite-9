@@ -13,12 +13,20 @@ for ($i=0; $i < count($suit); $i++){
 
     }
 }
-for ($i=0; $i < 26; $i++){
+
+for ($i=0; $i < 52; $i++){
+    $deck1[] = $deck[$i];
+    if (count($deck1) == 26) continue; //FIXME:
+} else if(count($deck1) == 26){
     $deck1[] = $deck[$i];
 }
-for ($i=26; $i < 52; $i++){
-    $deck2[] = $deck[$i];
-}
+
+//for ($i=0; $i < 26; $i++){
+//    $deck1[] = $deck[$i];
+//}
+//for ($i=26; $i < 52; $i++){
+//    $deck2[] = $deck[$i];
+//}
 
 $shaffle[0] = $deck2[0];
 for($i=0; $i < 26; $i++){
