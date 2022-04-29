@@ -28,14 +28,21 @@ for($i=0; $i < 26; $i++){
 }
 
 
-
-echo "\$Deck", "</pre>" . print_r($deck, true) ."</pre>";
+echo "Deck \$deck";
+echo "<br>";
+echo "</pre>" . print_r($deck, true) ."</pre>";
 echo "<br><br><br>";
-echo "\$Deck1", "</pre>" . print_r($deck1, true) ."</pre>";
+echo "Deck \$deck1";
+echo "<br>";
+echo "</pre>" . print_r($deck1, true) ."</pre>";
 echo "<br><br><br>";
-echo "\$Deck2", "</pre>" . print_r($deck2, true) ."</pre>";
+echo "Deck \$deck2";
+echo "<br>";
+echo "</pre>" . print_r($deck2, true) ."</pre>";
 echo "<br><br><br>";
-echo "\$shaffle", "</pre>" . print_r($shaffle, true) ."</pre>";
+echo "Deck \$shaffle";
+echo "<br>";
+echo "</pre>" . print_r($shaffle, true) ."</pre>";
 
 
 ?>
