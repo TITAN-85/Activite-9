@@ -15,44 +15,28 @@ for ($i=0; $i < count($suit); $i++){
 
 
 
-//Charle variant
+//Charle
 for ($i=0; $i < 52; $i++){
     if ($i < 26 ) $deck1[] = $deck[$i];
     else          $deck2[] = $deck[$i];
 }
 
-////My variant
-//for ($i=0; $i < 26; $i++){
-//    $deck1[] = $deck[$i];
-//}
-//for ($i=26; $i < 52; $i++){
-//    $deck2[] = $deck[$i];
-//}
 
-
-
-
-$shaffle[0] = $deck2[0];
 for($i=0; $i < 26; $i++){
-    $shaffle[] = $deck1[$i];
-    $shaffle[] = $deck2[$i+1];
+   $shaffle[] = $deck1[$i];
+   $shaffle[] = $deck2[$i];
 }
-unset($shaffle[52]);
 
 
 
+echo "\$Deck", "</pre>" . print_r($deck, true) ."</pre>";
+echo "<br><br><br>";
+echo "\$Deck1", "</pre>" . print_r($deck1, true) ."</pre>";
+echo "<br><br><br>";
+echo "\$Deck2", "</pre>" . print_r($deck2, true) ."</pre>";
+echo "<br><br><br>";
+echo "\$shaffle", "</pre>" . print_r($shaffle, true) ."</pre>";
 
-echo "\$Deck", "</pre>", print_r($deck, true),"</pre>";
-echo "</pre></pre></pre>";
-echo "\$Deck1", "</pre>", print_r($deck1, true),"</pre>";
-echo "</pre></pre></pre>";
-echo "\$Deck2", "</pre>", print_r($deck2, true),"</pre>";
-echo "</pre></pre></pre>";
-echo "\$shaffle", "</pre>", print_r($shaffle, true),"</pre>";
-
-
-
-//echo "\$Deck", "</pre>", var_dump ($deck,"</pre>";
 
 ?>
 
