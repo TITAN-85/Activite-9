@@ -13,19 +13,32 @@ for ($i=0; $i < count($suit); $i++){
     }
 }
 
-
-
-//Charle
 for ($i=0; $i < 52; $i++){
     if ($i < 26 ) $deck1[] = $deck[$i];
     else          $deck2[] = $deck[$i];
 }
 
-
 for($i=0; $i < 26; $i++){
    $shaffle[] = $deck1[$i];
    $shaffle[] = $deck2[$i];
 }
+
+for($i=0; $i < count($deck); $i++){
+    echo $deck[$i];
+    if(($i+1)%13 ==0 && $i!=0) {
+        echo "<br>";
+    }
+}
+echo "<br><br><br>";
+
+for($i=0; $i < count($shaffle); $i++){
+    echo $shaffle[$i];
+    if(($i+1)%13 ==0 && $i!=0) {
+        echo "<br>";
+    }
+}
+
+echo "<br><br><br>";
 
 
 echo "Deck \$deck";
